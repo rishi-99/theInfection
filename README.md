@@ -15,7 +15,7 @@ w.r.t to there type i.e infected,immuned.
 
 The features of blob can be defined in features.py file as follows:
 
-'''python
+```python
 
 #features.py
 #-- Setting of window size and blob features-----
@@ -30,7 +30,7 @@ infected_thresh = 4	        # min infected blob to convert immunized to infected
 imm_sensitive = 0.4	        # factor of blob_sensitive_dist to neutralized the other blob
 inf_sensitive = 0.6			# factor of blob_sensitive_dist to infect the other blob
 #-------------------------------------------------
-'''
+```
 
 The race begins with blob population defined as "no_blob" in window with random velocity upto max defines as "max_speed".
 Blo Bounces off the wall of windows as defines in Blob.py.
@@ -48,9 +48,6 @@ blob neutral
 - When neutral blob comes in "inf_sensitive" radius of infected blob, it turns infected
 
 
-# The infection
-
-
 # Changes in population type w.r.t to time/iteration
 
 ![alt text](https://github.com/rishi-99/theInfection/blob/master/The_fight_2.png)
@@ -61,10 +58,23 @@ All below modules in python 3.6 and above
 
 - opencv-python 
 
-'''python
+```python
 
 pip install opencv-python
-'''
+```
+
+## Execution 
+
+Run 'funbox.py' with python3. Features of environment can be changed in 'feature.py'.
+
+# improvements and further idea
+
+- Add more blob features like health, blob muliplication and blob death.
+- Add food and poison based interaction
+- Add blob size increament and decrement based on food and energy consumption
+- Add re-enforcemed learning using Q-table
+
+### Please feel free to contribute, improve, enrich and evolve this project.
 
 
 
