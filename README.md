@@ -35,6 +35,12 @@ inf_sensitive = 0.6			# factor of blob_sensitive_dist to infect the other blob
 The race begins with blob population defined as "no_blob" in window with random velocity upto max defines as "max_speed".
 Blo Bounces off the wall of windows as defines in Blob.py.
 
+
+
+[![Simulation of infection and cure in a population](https://www.yoursite.com/miniature.png)](https://github.com/rishi-99/theInfection/blob/master/The_fight.avi)
+
+
+
 ## Conditions of Environment
 
 - "immun_threshold number" is the number of immuned blobs requiered in neutral blob sensitive radius to turn neutral
@@ -48,12 +54,14 @@ blob neutral
 - When neutral blob comes in "inf_sensitive" radius of infected blob, it turns infected
 
 
+
+
 # Changes in population type w.r.t to time/iteration
 
 ![alt text](https://github.com/rishi-99/theInfection/blob/master/The_fight_2.png)
 
 
-# Requierements 
+# Requirements 
 All below modules in python 3.6 and above
 
 - opencv-python 
