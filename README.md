@@ -77,7 +77,7 @@ Run 'funbox.py' with python3. Features of environment can be changed in 'feature
 
 # improvements and further idea
 
-- Add more blob features like health, blob muliplication and blob death.
+- Add more blob features like health, blob multiplication and blob death.
 - Add food and poison based interaction
 - Add blob size increament and decrement based on food and energy consumption
 - Add re-enforced learning using Q-table
