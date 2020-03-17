@@ -58,7 +58,7 @@ blob neutral
 
 # Changes in population type w.r.t to time/iteration
 
-[![Population stats]](https://github.com/rishi-99/theInfection/blob/master/The_fight_2.png)
+[![Population stats]](https://github.com/rishi-99/theInfection/blob/master/media/The_fight_2.png)
 
 
 # Requirements 
