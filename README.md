@@ -1,6 +1,6 @@
 # theInfection
 
-##About
+## About
 
 A simple environment representing the spread and cure of the infections (negative traits).
 Environment with the blob population starting with one infected blob and 3 immuned blob interacts
@@ -15,7 +15,8 @@ w.r.t to there type i.e infected,immuned.
 
 The features of blob can be defined in features.py file as follows:
 
-'''
+'''python
+
 #features.py
 #-- Setting of window size and blob features-----
 
@@ -34,17 +35,17 @@ inf_sensitive = 0.6			# factor of blob_sensitive_dist to infect the other blob
 The race begins with blob population defined as "no_blob" in window with random velocity upto max defines as "max_speed".
 Blo Bounces off the wall of windows as defines in Blob.py.
 
-##Conditions of Environment
+## Conditions of Environment
 
-1) "immun_threshold number" is the number of immuned blobs requiered in neutral blob sensitive radius to turn neutral
+- "immun_threshold number" is the number of immuned blobs requiered in neutral blob sensitive radius to turn neutral
 blob immune
 
-2) "infected_thresh" number is the number of infected blobs requiered in neutral blob sensitive radius to turn immuned 
+- "infected_thresh" number is the number of infected blobs requiered in neutral blob sensitive radius to turn immuned 
 blob neutral
 
-3) When infected blob comes in "imm_sensitive" radius of immune blob, it turns neutral
+- When infected blob comes in "imm_sensitive" radius of immune blob, it turns neutral
 
-4) When neutral blob comes in "inf_sensitive" radius of infected blob, it turns infected
+- When neutral blob comes in "inf_sensitive" radius of infected blob, it turns infected
 
 
 # The infection
@@ -58,8 +59,10 @@ blob neutral
 # Requierements 
 All below modules in python 3.6 and above
 
-1) opencv-python 
-'''
+- opencv-python 
+
+'''python
+
 pip install opencv-python
 '''
 
