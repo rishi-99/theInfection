@@ -21,7 +21,7 @@ The features of blob can be defined in features.py file as follows:
 #-- Setting of window size and blob features-----
 
 window = (1500,1000)        # window size
-bg_color = [0, 0,0 ]        # Background color (black default)
+bg_color = [0,0,0]        # Background color (black default)
 blob_sensitive_dist = 150   # min distance to sense other blob
 max_speed = 7                   # max speed of blob
 no_blob = 80                # population of blob
@@ -37,7 +37,7 @@ Blo Bounces off the wall of windows as defines in Blob.py.
 
 
 
-[![Simulation of infection and cure in a population](https://www.yoursite.com/miniature.png)](https://github.com/rishi-99/theInfection/blob/master/The_fight.avi)
+[![Simulation of infection and cure in a population](https://github.com/rishi-99/theInfection/blob/master/media/theInfection.gif)](https://github.com/rishi-99/theInfection/blob/master/The_fight.avi)
 
 
 
@@ -58,7 +58,7 @@ blob neutral
 
 # Changes in population type w.r.t to time/iteration
 
-![alt text](https://github.com/rishi-99/theInfection/blob/master/The_fight_2.png)
+![Population stats](https://github.com/rishi-99/theInfection/blob/master/media/The_fight_2.png)
 
 
 # Requirements 
@@ -77,10 +77,10 @@ Run 'funbox.py' with python3. Features of environment can be changed in 'feature
 
 # improvements and further idea
 
-- Add more blob features like health, blob muliplication and blob death.
+- Add more blob features like health, blob multiplication and blob death.
 - Add food and poison based interaction
 - Add blob size increament and decrement based on food and energy consumption
-- Add re-enforcemed learning using Q-table
+- Add re-enforced learning using Q-table
 
 ### Please feel free to contribute, improve, enrich and evolve this project.
 
