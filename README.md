@@ -43,10 +43,10 @@ Blo Bounces off the wall of windows as defines in Blob.py.
 
 ## Conditions of Environment
 
-- "immun_threshold number" is the number of immuned blobs requiered in neutral blob sensitive radius to turn neutral
+- "immun_threshold number" is the number of immuned blobs required in neutral blob sensitive radius to turn neutral
 blob immune
 
-- "infected_thresh" number is the number of infected blobs requiered in neutral blob sensitive radius to turn immuned 
+- "infected_thresh" number is the number of infected blobs required in neutral blob sensitive radius to turn immuned 
 blob neutral
 
 - When infected blob comes in "imm_sensitive" radius of immune blob, it turns neutral
