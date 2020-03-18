@@ -56,7 +56,7 @@ blob neutral
 
 
 
-# Changes in population type w.r.t to time/iteration
+# Changes in population type w.r.t time/iteration
 
 ![Population stats](https://github.com/rishi-99/theInfection/blob/master/media/graph.png)
 
