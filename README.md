@@ -37,7 +37,7 @@ Blo Bounces off the wall of windows as defines in Blob.py.
 
 
 
-[![Simulation of infection and cure in a population](https://github.com/rishi-99/theInfection/blob/master/media/theInfection.gif)](https://github.com/rishi-99/theInfection/blob/master/The_fight.avi)
+[![Simulation of infection and cure in a population](https://github.com/rishi-99/theInfection/blob/master/media/theInfection.gif)](https://github.com/rishi-99/theInfection/blob/master/theInfection.avi)
 
 
 
@@ -58,7 +58,7 @@ blob neutral
 
 # Changes in population type w.r.t to time/iteration
 
-![Population stats](https://github.com/rishi-99/theInfection/blob/master/media/The_fight_2.png)
+![Population stats](https://github.com/rishi-99/theInfection/blob/master/media/graph.png)
 
 
 # Requirements 
