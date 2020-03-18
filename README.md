@@ -75,7 +75,7 @@ pip install opencv-python
 
 Run 'funbox.py' with python3. Features of environment can be changed in 'feature.py'.
 
-# improvements and further idea
+# Improvements and further idea
 
 - Add more blob features like health, blob multiplication and blob death.
 - Add food and poison based interaction
