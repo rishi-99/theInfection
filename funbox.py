@@ -3,27 +3,30 @@ import numpy as np
 from  random import *
 from features import *
 from Blob import blob
+import os
 
 
 
 if "__main__" == __name__:
 
+	if not os.path.isdir('media'):
+		os.mkdir('media')
+	stats_ = 'media/'+ stats
+	video_ = 'media/'+ video
 
-	with open('stat.txt', 'w') as f:
+	with open(stats_, 'w') as f:
 		f.write('not_infected\tinfected\timmnuned\n')
 	blobs=  []
 	for x in range(no_blob):
-		blobs.append(blob(5,1, (randint(0,window[0]),randint(0,window[1])),(randint(1,max_speed),randint(1,max_speed)),window))
-	blobs[1].infected = True  #introduce infection
-	# blobs[5].infected = True  #introduce infection
-	blobs[2].immunizer = True  #introduce immunizer
-	blobs[3].immunizer = True  #introduce immunizer
-	blobs[4].immunizer = True  #introduce immunizer
-	blobs[11].immunizer = True  #introduce immunizer
+		blobs.append(blob(6,1, (randint(0,window[0]),randint(0,window[1])),(randint(1,max_speed),randint(1,max_speed)),window))
+	for blob_ in blobs[:initial_infected]:
+		blob_.infected=True
+	for blob_ in blobs[initial_infected:initial_infected+initial_immuned]:
+		blob_.immunizer=True
 
 
 
-	out_ = cv2.VideoWriter('The_fight.avi', cv2.VideoWriter_fourcc(*'DIVX'), 15, window)
+	out_ = cv2.VideoWriter(video_, cv2.VideoWriter_fourcc(*'DIVX'), 15, window)
 	while True:
 
 		# color = [213, 193,62 ]
@@ -53,7 +56,7 @@ if "__main__" == __name__:
 							brightB =  bg_color[0]*(ratio) + blob_color[0]*(1-ratio)
 							brightG =  bg_color[1]*(ratio) + blob_color[1]*(1-ratio)
 							brightR =  bg_color[2]*(ratio) + blob_color[2]*(1-ratio)
-							cv2.line(main_matrix, (Blob.x,Blob.y), (other.x,other.y), (brightB,brightG ,brightR), 1)
+							cv2.line(main_matrix, (Blob.x,Blob.y), (other.x,other.y), (brightB,brightG ,brightR), 2)
 
 			# if 0 < len(immunized_count) < immun_threshold:
 			# 		Blob.infected=False
@@ -124,13 +127,18 @@ if "__main__" == __name__:
 		cv2.putText(main_matrix, "Immunising dist - {}".format(blob_sensitive_dist*imm_sensitive), (10,100), font, fontScale,color, thickness, cv2.LINE_AA, False)
 		cv2.putText(main_matrix, "Infecting dist - {}".format(blob_sensitive_dist*inf_sensitive), (10,120), font, fontScale,color, thickness, cv2.LINE_AA, False)
 
-		with open('stat.txt','a') as f:
+		with open(stats_,'a') as f:
 			f.write(f'{not_infected}\t{infected}\t{immnuned}\n')
-		cv2.imshow("image", main_matrix)
+
 		out_.write(main_matrix)
 		print('Infected =',infected,', Not_infected =',not_infected,', Immuned =',immnuned,end='\r')
-		if infected  == no_blob or immnuned==no_blob:
+
+		if infected  == no_blob or not_infected==no_blob:
 			break
-		if cv2.waitKey(200) & 0xFF == ord('q'):
-			break
+
+		if show_frames:
+			cv2.imshow("image", main_matrix)
+			if cv2.waitKey(80) & 0xFF == ord('q'):
+				break
+
 	out_.release()
