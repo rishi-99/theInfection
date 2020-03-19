@@ -73,7 +73,7 @@ pip install opencv-python
 - Numpy
 ```python
 
-ip install numpy
+pip install numpy
 ```
 
 ## Execution 
