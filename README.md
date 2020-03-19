@@ -70,6 +70,11 @@ All below modules in python 3.6 and above
 
 pip install opencv-python
 ```
+- Numpy
+```python
+
+ip install numpy
+```
 
 ## Execution 
 
