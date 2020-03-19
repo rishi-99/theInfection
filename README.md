@@ -10,6 +10,7 @@ with the rest blob populations. Colour schemas of blobs are as follows:
 - green blob- neutral
 - blue blob- immuned 
 
+
 Blobs interact with each other at defined blob sensitive distance. The blob sesnsitivity is defines 
 w.r.t to there type i.e infected,immuned.
 
