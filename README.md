@@ -6,9 +6,9 @@ A simple environment representing the spread and cure of the infections (negativ
 Environment with the blob population starting with one infected blob and 3 immuned blob interacts
 with the rest blob populations. Colour schemas of blobs are as follows:
 
-red - infected
-green - neutral
-blue - immuned 
+- red blob - infected
+- green blob- neutral
+- blue blob- immuned 
 
 Blobs interact with each other at defined blob sensitive distance. The blob sesnsitivity is defines 
 w.r.t to there type i.e infected,immuned.
